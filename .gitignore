@@ -1,0 +1,33 @@
+# Sanal ortam (1.4 GB — asla push edilmez)
+.venv/
+venv/
+env/
+
+# Büyük model ve veri dosyaları
+models/
+data/
+.env
+
+# Ses kayıtları
+*.m4a
+*.wav
+*.mp3
+*.mp4
+**pycache**/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pkl
+*.joblib
+.DS_Store
+
+# Rapor dosyaları (depoya dahil edilmiyor)
+CallSense_AI_Project_Report.pdf
+CallSense_AI_Project_Report.docx
+
+# Geçici / kilit dosyaları
+.~lock.*#
+*.tmp

@@ -1,0 +1,15 @@
+[server]
+# speechbrain'in opsiyonel modüllerini (flair, numba) tararken hata basan
+# otomatik dosya izleyicisini kapatır. Kod değişince sayfayı elle yenilemen yeterli.
+fileWatcherType = "none"
+
+[logger]
+level = "error"
+
+[theme]
+base = "light"
+primaryColor = "#0d9488"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f5f8fa"
+textColor = "#0f172a"
+font = "sans serif"

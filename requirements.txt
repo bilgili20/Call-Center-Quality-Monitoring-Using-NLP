@@ -1,0 +1,38 @@
+# ============================================================================
+# Çağrı Merkezi Kalite Skoru Sistemi — KİLİTLİ SÜRÜMLER
+# ----------------------------------------------------------------------------
+# Bu sürümler birbiriyle uyumlu olarak DOĞRULANDI (pip resolver çakışma vermedi).
+# Sürümleri DEĞİŞTİRME. "pip install whisperx" gibi sürümsüz kurulum her şeyi
+# en son sürüme çekip torch 2.8 / numpy 2 / transformers 5.x çakışmalarına yol
+# açar (use_auth_token, is_offline_mode, AudioMetaData hataları buradan gelir).
+#
+# Python 3.9–3.12 gerekir (3.13 DESTEKLENMEZ). Sen 3.11 kullanıyorsun, uygun.
+# ============================================================================
+
+# --- Temel sayısal yığın (numpy<2 KRİTİK) ---
+numpy==1.26.4
+
+# --- PyTorch (torchaudio 2.2.x'te AudioMetaData hâlâ var; 2.8'de kaldırıldı) ---
+torch==2.2.2
+torchaudio==2.2.2
+
+# --- STT motoru ---
+whisperx==3.3.1
+faster-whisper==1.1.0
+ctranslate2==4.4.0
+onnxruntime==1.17.3
+
+# --- Diarization (konuşmacı ayırma) ---
+pyannote.audio==3.3.2
+speechbrain==1.0.2
+
+# --- NLP / BERTurk (eski transformers + hub: use_auth_token VE is_offline_mode birlikte var) ---
+transformers==4.39.3
+tokenizers==0.15.2
+huggingface_hub==0.23.4
+
+# --- Uygulama / veri ---
+streamlit==1.38.0
+pandas==2.2.2
+scikit-learn==1.4.2
+nltk==3.8.1
